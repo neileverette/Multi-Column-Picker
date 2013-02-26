@@ -2,6 +2,10 @@ $(document).ready(function(){
 
 	// SET THE INITIAL VALUES OF THE PAGE
 	
+	// SET THE INITIAL VALUE OF THE PAGE MARGIN
+	$('body').css('margin', '1em');
+	$('#pageMargin').val('1');
+	
 	// SET INITIAL VALUE OF COLUMNS
 	$('#columns').val('3');
 	$('p').css('-webkit-column-count', '3');
@@ -24,6 +28,13 @@ $(document).ready(function(){
 
 
 	// UPDATES WHEN SELECTION HAS CHANGED
+	
+	//UPDATE THE MARGIN OF THE BODY
+	$('#pageMargin').change(function(){
+		var pageMargin = $('#pageMargin').val() + 'em';
+		console.log('I have been changed to ' + pageMargin);
+		$('body').css('margin', pageMargin);
+	});
 	
 	//UPDATE THE COLUMNS
 	$('#columns').change(function(){

@@ -1,3 +1,17 @@
 body{
 	margin: 2em;
 	}
+
+.selected{
+	font-family: "helvetica";
+	text-transform:uppercase;
+	vertical-align: "-moz-center: center;";
+   	background: transparent;
+   	width: 150px;
+   	padding: 5px;
+   	font-size: .7em;
+   	border: 2px solid #999999;
+   	border-radius: 0;
+   	height: 25px;
+   -webkit-appearance: none;
+}
