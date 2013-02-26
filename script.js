@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$(document).ready(function(){		
 
 	// SET THE INITIAL VALUES OF THE PAGE
 	
@@ -32,7 +32,6 @@ $(document).ready(function(){
 	//UPDATE THE MARGIN OF THE BODY
 	$('#pageMargin').change(function(){
 		var pageMargin = $('#pageMargin').val() + 'em';
-		console.log('I have been changed to ' + pageMargin);
 		$('body').css('margin', pageMargin);
 	});
 	
@@ -55,8 +54,7 @@ $(document).ready(function(){
 	$('#fontSize').change(function(){
 		var fontSize = $('#fontSize').val() + 'em';
 		$('p').css('font-size', fontSize);
-	});
-	
+	});	
 	
 	// UPDATE FONT CHOICE
 	$('#font').change(function(){
